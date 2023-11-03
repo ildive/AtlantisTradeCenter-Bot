@@ -23,7 +23,7 @@ from commands import commandStartManager
 from apscheduler.schedulers.background import BackgroundScheduler
 
 scheduler = BackgroundScheduler()
-bot = telebot.TeleBot("6694548358:AAEyP9jRmRLl65dhVGJk_tXAsScUIJr00Vk", parse_mode="HTML")
+bot = telebot.TeleBot("<TOKEN>", parse_mode="HTML")
 groupModuliChat_id = "-1001974658159"
 groupStafferChat_id = "-1001933687315"
 canaleAste = "@AtlantisTradeCenter"
