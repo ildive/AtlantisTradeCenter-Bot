@@ -3,7 +3,7 @@ import telebot
 import fileManager
 import markupManager as mrkp
 
-bot = telebot.TeleBot("6694548358:AAEyP9jRmRLl65dhVGJk_tXAsScUIJr00Vk", parse_mode='html')
+bot = telebot.TeleBot("<TOKEN>", parse_mode='html')
 permessoInvioModuloChatId = []
 
 #questa è la funzione che mostra all'utente la schermata home.
