@@ -1,4 +1,4 @@
-# Atlantis-Trade-Center-Bot
+# 🐬 Atlantis-Trade-Center-Bot 🐬
 
 # Description
 This repository hosts a Telegram bot designed to facilitate online auctions and exchanges within the Atlantis Trade Center bot community on Telegram. The bot provides an intuitive platform for users to create, manage, and participate in auctions, announcements, and trading requests for in-game items within the Atlantis RolePlay Minecraft server.
