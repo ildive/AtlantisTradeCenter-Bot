@@ -3,7 +3,7 @@ import telebot
 import fileManager
 import os
 
-bot = telebot.TeleBot("6694548358:AAEyP9jRmRLl65dhVGJk_tXAsScUIJr00Vk")
+bot = telebot.TeleBot("<TOKEN>")
 
 
 def checkRegistrazione(message):
