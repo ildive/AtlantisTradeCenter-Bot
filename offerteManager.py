@@ -4,7 +4,7 @@ import fileManager
 import funzioniManager
 import markupManager
 
-bot = telebot.TeleBot("6694548358:AAEyP9jRmRLl65dhVGJk_tXAsScUIJr00Vk", parse_mode='html')
+bot = telebot.TeleBot("<TOKEN>", parse_mode='html')
 canaleAste = "@AtlantisTradeCenter"
 groupStafferChat_id = "-1001933687315"
 
