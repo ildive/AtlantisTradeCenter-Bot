@@ -10,7 +10,7 @@ import funzioniManager
 import markupManager
 import markupManager as mrkp
 
-bot = telebot.TeleBot("6694548358:AAEyP9jRmRLl65dhVGJk_tXAsScUIJr00Vk")
+bot = telebot.TeleBot("<TOKEN>")
 groupModuliChat_id = "-1001974658159"
 groupStafferChat_id = "-1001933687315"
 canaleAste = "@AtlantisTradeCenter"
