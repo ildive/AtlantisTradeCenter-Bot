@@ -13,6 +13,9 @@ This repository hosts a Telegram bot designed to facilitate online auctions and 
 ```bash
 pip install APScheduler
 pip install pyTelegramBotApi
+```
+than, move to the repository directory
+```bash
 python main.py
 ```
 Feel free to contribute or utilize this repository to enhance the functionalities of the bot and support a thriving online trade community in Atlantis RP on Telegram.
