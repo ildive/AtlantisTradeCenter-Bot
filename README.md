@@ -9,6 +9,12 @@ This repository hosts a Telegram bot designed to facilitate online auctions and 
 - **Announcements:** Post announcements for items you wish to buy or sell, allowing community members to engage in the trade.
 - **Point System Integration:** The bot seamlessly integrates with the Atlantis Trade Center's point system, allowing users to earn and spend points for trade facilitation.
 
+# Setup
+```bash
+pip install APScheduler
+pip install pyTelegramBotApi
+python main.py
+```
 Feel free to contribute or utilize this repository to enhance the functionalities of the bot and support a thriving online trade community in Atlantis RP on Telegram.
 
 Note: The project is under continuous development, undergoing optimization and improvements for enhanced functionality and user experience
