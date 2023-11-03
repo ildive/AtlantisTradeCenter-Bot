@@ -11,4 +11,4 @@ This repository hosts a Telegram bot designed to facilitate online auctions and 
 
 Feel free to contribute or utilize this repository to enhance the functionalities of the bot and support a thriving online trade community in Atlantis RP on Telegram.
 
-For more details on usage, setup instructions, and contributing guidelines, refer to the documentation in the repository's wiki.
+Note: The project is under continuous development, undergoing optimization and improvements for enhanced functionality and user experience
