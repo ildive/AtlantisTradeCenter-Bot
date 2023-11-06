@@ -10,7 +10,9 @@ import sponsorManager
 
 twoTimesClickScambio = []
 
-bot = telebot.TeleBot("<TOKEN>", parse_mode="HTML")
+from secrets import *
+
+bot = telebot.TeleBot(token, parse_mode="HTML")
 
 def checkFineAsta():
     now = datetime.now()

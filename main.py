@@ -15,6 +15,7 @@ import markupManager
 import offerteManager
 import recensioniManager
 import schermateManager
+import secrets
 import sponsorManager
 import taskManager
 import testiManager
@@ -22,15 +23,12 @@ from commands import commandStartManager
 
 from apscheduler.schedulers.background import BackgroundScheduler
 
-scheduler = BackgroundScheduler()
-bot = telebot.TeleBot("<TOKEN>", parse_mode="HTML")
-groupModuliChat_id = "-1001974658159"
-groupStafferChat_id = "-1001933687315"
-canaleAste = "@AtlantisTradeCenter"
-devCID = "1654713548"
-maxWarnBeforeBan = 2
+#Importo delle variabili nel file secrets.py
+from secrets import *
 
-listaFile = "files.txt"
+scheduler = BackgroundScheduler()
+bot = telebot.TeleBot(token, parse_mode="HTML")
+maxWarnBeforeBan = 2
 
 moduloVuoto = {}
 
@@ -40,19 +38,6 @@ def checkFiles(file_list):
         if not os.path.exists(file):
             open(file, "x")
             print("File " + file + " creato.")
-
-
-# Verifica l'esistenza del file di lista e crea i file se necessario
-if os.path.exists(listaFile):
-    file_list = [line.rstrip() for line in open(listaFile)]
-    checkFiles(file_list)
-else:
-    with open(listaFile, "w", encoding='utf-8') as lista_file:
-        lista_file.write("admins.txt\nusers.json")
-    file_list = ["admins.txt", "users.json"]
-    checkFiles(file_list)
-
-adminr = [line.rstrip() for line in open('admins.txt')]
 
 @bot.message_handler(commands=['ban'])
 def banCommand(message):

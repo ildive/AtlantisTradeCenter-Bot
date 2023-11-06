@@ -10,10 +10,9 @@ import funzioniManager
 import markupManager
 import markupManager as mrkp
 
-bot = telebot.TeleBot("<TOKEN>")
-groupModuliChat_id = "-1001974658159"
-groupStafferChat_id = "-1001933687315"
-canaleAste = "@AtlantisTradeCenter"
+from secrets import *
+
+bot = telebot.TeleBot(token)
 
 moduloAsta1 = "🐬 Asta @AtlantisTradeCenter 🐬\nModulo #"
 moduloAsta2 = "\n\n📦 Oggetto: \n\n📄 Descrizione: \n\n🪙 Base asta: \n\n💵 Rilancio: \n\n🏦 Compra ora: \n\n🗡 Legalità: \n"

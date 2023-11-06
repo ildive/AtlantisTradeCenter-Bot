@@ -2,12 +2,12 @@ import json
 import telebot
 import fileManager
 import os
+from secrets import *
 
-bot = telebot.TeleBot("<TOKEN>")
+bot = telebot.TeleBot(token)
 
 
 def checkRegistrazione(message):
-    print("arrivato")
     # L'utente non è nel file
     file_path = "users.json"
     chat_id = message.chat.id

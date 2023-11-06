@@ -2,8 +2,6 @@ import os
 from datetime import datetime, timedelta
 import json
 
-import fileManager
-
 contaSpam = {}
 
 def abbrev_to_number(abbrev_str):

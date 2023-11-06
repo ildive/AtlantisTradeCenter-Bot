@@ -2,18 +2,14 @@ import json
 import os
 
 import telebot
-from datetime import datetime
 
 import funzioniManager
 import markupManager
-import moduliManager
 import schermateManager
 
-groupModuliChat_id = "-1001974658159"
-groupStafferChat_id = "-1001933687315"
-canaleAste = "@AtlantisTradeCenter"
+from secrets import *
 
-bot = telebot.TeleBot("<TOKEN>", parse_mode="HTML")
+bot = telebot.TeleBot(token, parse_mode="HTML")
 utentiDaPremiare = []
 
 #lista dei file

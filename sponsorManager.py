@@ -4,9 +4,9 @@ import os
 
 import telebot
 
-import fileManager
+from secrets import *
 
-bot = telebot.TeleBot("<TOKEN>", parse_mode="HTML")
+bot = telebot.TeleBot(token, parse_mode="HTML")
 
 def checkUserSponsor(chat_id):
     path = "sponsorUsers.json"

@@ -4,9 +4,9 @@ import fileManager
 import funzioniManager
 import markupManager
 
-bot = telebot.TeleBot("<TOKEN>", parse_mode='html')
-canaleAste = "@AtlantisTradeCenter"
-groupStafferChat_id = "-1001933687315"
+from secrets import *
+
+bot = telebot.TeleBot(token, parse_mode="HTML")
 
 def registraOfferta(message):
     moduloID = funzioniManager.messageTextToModuloID(message.reply_to_message.text)

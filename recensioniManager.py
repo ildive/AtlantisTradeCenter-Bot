@@ -3,10 +3,9 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 import funzioniManager
 
-groupModuliChat_id = "-1001974658159"
-groupStafferChat_id = "-1001933687315"
+from secrets import *
 
-bot = telebot.TeleBot("<TOKEN>", parse_mode="HTML")
+bot = telebot.TeleBot(token, parse_mode="HTML")
 
 def accettaRichiestaRecensioneMarkup(moduloID):
     markup = InlineKeyboardMarkup()
