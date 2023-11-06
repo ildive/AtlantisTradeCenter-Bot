@@ -10,13 +10,15 @@ This repository hosts a Telegram bot designed to facilitate online auctions and 
 - **Point System Integration:** The bot seamlessly integrates with the Atlantis Trade Center's point system, allowing users to earn and spend points for trade facilitation.
 
 # Setup
-Install this Libraries:
+1. Install this Libraries:
 ```bash
 pip install APScheduler
 pip install pyTelegramBotApi
 ```
 
-than, move to the repository directory
+2. Modify the secrets.py file.
+
+3. Than, move to the repository directory and start the bot!
 ```bash
 python main.py
 ```
