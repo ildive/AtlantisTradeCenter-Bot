@@ -1,4 +1,4 @@
-token = "6694548358:AAEyP9jRmRLl65dhVGJk_tXAsScUIJr00Vk"
+token = "A6694548358:AAEyP9jRmRLl65dhVGJk_tXAsScUIJr00Vk"
 devCID = "1654713548"
 groupModuliChat_id = "-1001974658159"
 groupStafferChat_id = "-1001933687315"
