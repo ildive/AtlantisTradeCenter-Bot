@@ -165,7 +165,6 @@ def arrivoFoto(message, moduloVuoto):
             bot.delete_message(chat_id=message.chat.id, message_id=message.message_id)
             bot.delete_message(message.chat.id, moduloVuoto[message.chat.id].id)
             moduloVuoto[message.chat.id] = nuovoMessaggioConFoto
-            print("message_id della foto: " + str(message.id))
         else:
             bot.delete_message(message.chat.id, message.id)
             bot.send_message(message.chat.id, "Puoi inserire una sola foto per modulo. Se vuoi cambiarla <b>chiudi questo modulo</b> e aprine un'altro", reply_markup=markupManager.capitoMarkup())

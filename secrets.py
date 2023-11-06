@@ -1,5 +1,5 @@
 token = "<ur token here>"
 devCID = "<the owner chat_id here>"
-groupModuliChat_id = "<place here the supergroup chat ID ("-123...") where all the modules to be evaluated are sent>"
-groupStafferChat_id = "<place here the supergroup chat ID ("-123...") that contains all the staff and delegates of the bot>"
+groupModuliChat_id = "<place here the supergroup chat ID ('-123...') where all the modules to be evaluated are sent>"
+groupStafferChat_id = "<place here the supergroup chat ID ('-123...') that contains all the staff and delegates of the bot>"
 canaleAste = "@urTelegramChannel"

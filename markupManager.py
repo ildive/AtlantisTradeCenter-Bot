@@ -1,3 +1,5 @@
+import secrets
+
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 import funzioniManager
@@ -13,6 +15,8 @@ def homeMarkup():
     markup.row_width = 1
     markup.add(InlineKeyboardButton("📄 Crea un modulo 📄", callback_data="home/tastoModulo"),
                InlineKeyboardButton(text="🚨 Assistenza 🚨", url="http://t.me/AssistenzaAtlantisTradeCenterBot"),
+               #split perchè canaleAste contiene il tag del canale con la @ davanti
+               InlineKeyboardButton(text="📣 Canale 📣", url=f"http://t.me/{(secrets.canaleAste).split('@')[1]}"),
                InlineKeyboardButton("ℹ️ info ℹ️", callback_data="home/tastoInfo"))
     return markup
 

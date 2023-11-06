@@ -11,7 +11,6 @@ bot = telebot.TeleBot(token, parse_mode="HTML")
 def registraOfferta(message):
     moduloID = funzioniManager.messageTextToModuloID(message.reply_to_message.text)
     messageID = funzioniManager.getMessageID(moduloID)
-    print(messageID)
     photo = funzioniManager.getPhotoBool(moduloID)
     if message.reply_to_message.text.startswith("🫰 OFFERTA 🫰"):
         # è una offerta.
@@ -46,7 +45,7 @@ def registraOfferta(message):
                             compraOra(message, moduloID)
                             bot.delete_message(message.chat.id, message.id)
                     else:
-                        print("OFFERTA INFERIORE AL RILANCIO")
+                        #Offerta inferiore al rilancio minimo
                         rilancioMinimo = int(funzioniManager.abbrev_to_number(funzioniManager.getOfferta(moduloID))) + int(funzioniManager.abbrev_to_number(funzioniManager.getRilancio(funzioniManager.getTextModulo(moduloID))))
                         bot.reply_to(message, "Il rilancio è troppo basso, il minimo deve essere: " + str(funzioniManager.number_to_abbrev(int(rilancioMinimo))))
                 except:

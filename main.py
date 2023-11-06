@@ -15,7 +15,6 @@ import markupManager
 import offerteManager
 import recensioniManager
 import schermateManager
-import secrets
 import sponsorManager
 import taskManager
 import testiManager
@@ -160,8 +159,6 @@ def startCommand(message):
             #semplice start
             schermateManager.showHome(message.chat.id)
             funzioniManager.rimuoviAntiSpam(message.chat.id)
-            if message.chat.type == "supergroup":
-                print(message.chat.id)
     else:
         bot.send_message(message.chat.id, "🚷 Sei stato bannato dal bot 🚷\n\nPer lo sban contattaci qui sotto", reply_markup=markupManager.assistenzaMarkupSenzaHome())
 

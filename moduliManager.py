@@ -66,7 +66,6 @@ def componiModulo(call):
     moduloCompleto = ""
     try:
         tipoModulo = call.message.text.split("🐬")[1].strip().split(" ")[0].lower()
-        print(tipoModulo)
         text = call.message.text
     except:
         tipoModulo = call.message.caption.split("🐬")[1].strip().split(" ")[0].lower()
