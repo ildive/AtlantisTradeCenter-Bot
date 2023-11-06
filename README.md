@@ -18,7 +18,7 @@ pip install pyTelegramBotApi
 
 2. Modify the secrets.py file.
 
-3. Than, move to the repository directory
+3. Than, move to the repository directory and start the bot!
 ```bash
 python main.py
 ```
