@@ -12,6 +12,7 @@ This repository hosts a Telegram bot designed to facilitate online auctions and 
 # Setup
 1. Install this Libraries:
 ```bash
+pip install requests
 pip install APScheduler
 pip install pyTelegramBotApi
 ```
